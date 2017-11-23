@@ -1,4 +1,4 @@
-package com.napier.rpm.web.controller;
+package com.hodor.rpm.web.controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -17,21 +17,10 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 /**
  *
- * @author NAP1051
- * @param <T>
- * @param <T>
  */
 public class BaseRestController<T> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BaseRestController.class);
-
-    /*@Autowired
-    protected AuditVo audit;
-    private ResponsePayload<T> responsePayLoad = new ResponsePayload<T>();
-
-    public ResponsePayload<T> getResponsePayLoad() {
-        return responsePayLoad;
-    }*/
 
     HttpHeaders getDefaultResponseHeader() {
         final HttpHeaders httpHeaders = new HttpHeaders();

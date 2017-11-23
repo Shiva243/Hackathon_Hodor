@@ -1,11 +1,9 @@
-package com.napier.rpm.web.support;
+package com.hodor.rpm.web.support;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
  *
- * @author NAP1051
- * @param <T>
  */
 public abstract class CometScriptCall<T> implements Runnable {
 

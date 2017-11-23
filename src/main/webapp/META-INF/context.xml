@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/drw-poc">
+    <!-- Very important for COMET to work on Tomcat -->
+    <Loader delegate="true"/>
+</Context>

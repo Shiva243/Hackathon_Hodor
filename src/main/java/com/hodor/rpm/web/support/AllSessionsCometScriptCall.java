@@ -1,4 +1,4 @@
-package com.napier.rpm.web.support;
+package com.hodor.rpm.web.support;
 
 import org.directwebremoting.Browser;
 import org.directwebremoting.ScriptSessions;
@@ -7,8 +7,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author NAP1051
- * @param <T>
  */
 public class AllSessionsCometScriptCall<T> extends CometScriptCall<T> {
 

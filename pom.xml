@@ -5,11 +5,11 @@
 
     <modelVersion>4.0.0</modelVersion>
    
-    <groupId>com.napier.rpm</groupId>
+    <groupId>com.hodor.rpm</groupId>
     <artifactId>hodor</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>dwr-poc</name>
+    <name>hodor</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -153,7 +153,7 @@
     </dependencies>
 
     <build>
-        <finalName>dwr-poc</finalName>
+        <finalName>hodor</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>

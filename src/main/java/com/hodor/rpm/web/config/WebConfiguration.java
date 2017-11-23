@@ -1,4 +1,4 @@
-package com.napier.rpm.web.config;
+package com.hodor.rpm.web.config;
 
 import static com.fasterxml.jackson.databind.SerializationFeature.FAIL_ON_EMPTY_BEANS;
 
@@ -10,14 +10,10 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
-import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -29,10 +25,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  *
- * @author NAP1051
  */
 @Configuration
-@ComponentScan("com.napier.rpm")
+@ComponentScan("com.hodor.rpm")
 public class WebConfiguration extends WebMvcConfigurerAdapter {
 
     @Bean

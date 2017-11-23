@@ -1,18 +1,16 @@
-package com.napier.rpm.web.controller;
+package com.hodor.rpm.web.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.napier.rpm.web.support.ClientScriptCaller;
+import com.hodor.rpm.web.support.ClientScriptCaller;
 
 /**
- * @author NAP1057
  *
  *
  */
@@ -24,12 +22,12 @@ public class VitalsController extends BaseRestController {
     @Autowired
     private ClientScriptCaller alerter;
 
-    @RequestMapping(value="/receive/panic", method = RequestMethod.GET)
-    public void receivePanicAlert(@RequestParam String msg) {
-        LOGGER.debug(">> received panic alert: " + msg);
+    @RequestMapping(value="/receive/changeprice", method = RequestMethod.GET)
+    public void receiveChangeName(@RequestParam String price) {
+        LOGGER.debug(">> received panic alert: " + price);
         //Get patient information using panic alert information
         //Pass the necessary arguments to the alerter
-        alerter.addMessage(new String[]{msg, "John E"});
+        alerter.addMessage(new String[]{price});
     }
 
 }

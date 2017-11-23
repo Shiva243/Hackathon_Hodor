@@ -1,4 +1,4 @@
-package com.napier.rpm.web.support;
+package com.hodor.rpm.web.support;
 
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -14,27 +14,16 @@ import org.springframework.util.Assert;
 
 /**
  *
- * @author NAP1051
  */
 @Component("panicAlerter")
 public class ClientScriptCaller implements InitializingBean, DisposableBean {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ClientScriptCaller.class);
-  /*  client.alerter.page.url=/
-    		client.alerter.page.function=panicAlertSounded
-    		client.alerter.scheduler.initialdelay=1
-    		client.alerter.scheduler.period=10
-    		client.alerter.scheduler.nothreads=1*/
     private ScheduledThreadPoolExecutor executor; 
     
-    private String pushMessagePage="/";
-    //@Value("${client.alerter.page.function}")
     private String clientFunctionName="panicAlertSounded";
-    //@Value("${client.alerter.scheduler.initialdelay}")
     private int initialDelay=1;
-    //@Value("${client.alerter.scheduler.period}")
     private int period=10;
-    //@Value("${client.alerter.scheduler.nothreads}")
     private int noScheduledThreads=1;
     private AllSessionsCometScriptCall<String> messageExecutor;
 
