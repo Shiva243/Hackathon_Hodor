@@ -114,7 +114,7 @@
  <div class="w3-third w3-margin-bottom"  style="width: 342px;margin: -485px 50px 0px 862px;">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li><div class="header">    
-  <img src="https://lh3.googleusercontent.com/RnKeDEyzJssi9hh1vUvfJgcPktO18_DuFD5W84pGyFEwlHTIgOxXhF7hOj8ky39w8HmvbAIYC-AHKhH6TyGd=w1280-h726-rw" alt="" style="width: 150px; height: 318px;"/>
+  <img src="https://image4.geekbuying.com/ggo_pic/2017-09-11/Xiaomi-Mi-Mix-2-5-99-Inch-6GB-128GB-Smartphone-Black-465278-.jpg" alt="" style="width: 150px; height: 318px;"/>
 
 </div></li>
         <li class="w3-theme" style="width: 340px; height: 23px;">
