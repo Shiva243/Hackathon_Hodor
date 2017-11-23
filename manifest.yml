@@ -1,0 +1,11 @@
+---
+ applications:
+ - name: HODOR
+   buildpack: java_buildpack
+   path: ./target/hodor.war
+   instances: 1
+   timeout: 180
+   memory: 300M
+   host: HODOR
+   env:
+    JBP_CONFIG_OPENJDK: 'verion: 1.8.+'
